@@ -1,8 +1,6 @@
 # Levenshein distance for word comparison, fuzzy algorithm complete
 
-from fuzzywuzzy import fuzz
 import numpy
-import Levenshtein
 
 
 def levenshteinMatrix(t1, t2):
@@ -56,5 +54,3 @@ def fuzzy_calculation(word1, word2):
 if __name__ == "__main__":
     print(fuzzy_calculation("kitten", "sitting"))
     # print(fuzz.ratio("wuzzy", "wuhzzy"))
-    print(Levenshtein.distance("kitten", "sitting"))
-    print(Levenshtein.ratio("kitten", "sitting"))
